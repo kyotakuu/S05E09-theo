@@ -28,11 +28,44 @@ const db = {
         title: 'Cassette',
         description: 'Nostalgie',
       });
+      const mp3 = await Product.create({ 
+        title: 'Fichier MP3',
+        description: 'Dématérialisé et compressé pour notre plus grand plaisir',
+      });
+      const vinyl = await Product.create({ 
+        title: 'Vinyl',
+        description: 'La valeur sure',
+      });
+      const gramophone = await Product.create({ 
+        title: 'Gramophone',
+        description: 'Préhistorique',
+      });
+      const miniCd = await Product.create({ 
+        title: 'Mini CD',
+        description: 'Un scandale de chez Sony',
+      });
       const universal = await Brand.create({ 
-        name: 'Univerval',
+        name: 'Universal',
+      });
+      const sonyMusic = await Brand.create({ 
+        name: 'Sony Music',
+      });
+      const polygram = await Brand.create({ 
+        name: 'PolyGram',
+      });
+      const emi = await Brand.create({ 
+        name: 'EMI',
+      });
+      const cbsRecord = await Brand.create({ 
+        name: 'CBS Record',
       });
       cd.setBrand(universal);
-      k7.setBrand(universal);     
+      k7.setBrand(universal);
+      mp3.setBrand(polygram);
+      vinyl.setBrand(emi); 
+      gramophone.setBrand(cbsRecord);  
+      miniCd.setBrand(sonyMusic);  
+
     }
     catch (error) {
       console.log(error);

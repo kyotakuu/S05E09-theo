@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+      <main class="page">
+        <section class="content">
+          <h1 class="content-title">Nos Marques</h1>
+          <p class="content-desc">Découvrez des marques exclusives validées par Elon Musk !</p>
+          <ul class="content-list">
+            <% for(const brand of brandsList) { %>
+              <li class="content-item"><a href="/brands/<%= brand.id %>" class="content-link"><%= brand.name %></a></li>
+            <% } %>
+          </ul>
+        </section>
+      </main>
+<%- include('partials/footer') %>
