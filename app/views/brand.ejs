@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+      <main class="page">
+        <section class="content">
+          <h1 class="content-title">Les produits de la marque <%= brand.name %></h1>
+          <p class="content-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At veniam, voluptas repellat magni illo quo consectetur esse aperiam excepturi cum laudantium, nam qui suscipit obcaecati dolor, inventore repudiandae hic vel.</p>
+          <ul class="content-list">
+            <% for(const product of brand.products) { %>
+              <li class="content-item"><a href="/product/<%= product.id %>" class="content-link"><%= product.title %></a></li>
+            <% } %>
+          </ul>
+        </section>
+      </main>
+<%- include('partials/footer') %>
