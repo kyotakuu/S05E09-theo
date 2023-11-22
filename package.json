@@ -1,7 +1,7 @@
 {
   "name": "shop-sandbox",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. On s'approprie un besoin, on comprend le projet qu'on s'apprete à réaliser 2. on peut réaliser ou partir d'intégrations statiques de nos pages types, du HTML, du CSS et du JS pour respectivement, la structure, la mise en forme et les intéractions. 3. Il nous faut un serveur HTTP pour servir nos pages quand un utilisateur les demandes en envoyant des requetes depuis son navigateur (en tapant une url ou en cliquant sur un lien) 4. J'execute un programme Javascript avec Node 5. Dans ce programme j'utilise express pour mettre en place un serveur HTTP, un programme qui entendra les requete HTTP qui lui sont adressée et qui pourra y répondre 6. Pour manipuler nos données facilement on met en place la BDD 7. Pour garantir des évolutions faciles du projet on fait des choix judicieux d'architecture",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -27,5 +27,6 @@
     "express": "^4.18.1",
     "pg": "^8.7.3",
     "sequelize": "^6.21.2"
-  }
+  },
+  "devDependencies": {}
 }
